@@ -1,1 +1,1 @@
-# What-does-the-Trust-Game-say-about-Trust-
+# What-does-the-Trust-Game-say-about-Trust
