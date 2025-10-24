@@ -1,7 +1,7 @@
 # The Trust Game: A Historical and Methodological Analysis on the Frontier of Experimental and Behavioral Economics
 
 [![Language](https://img.shields.io/badge/Language-R-blue.svg)](https://www.r-project.org/)
-[![Repo](https://img.shields.io/badge/GitHub-Repo-green.svg)](https://github.com/ncamilotto/What-does-the-Trust-Game-say-about-Trust-)
+[![Repo](https://img.shields.io/badge/GitHub-Repo-green.svg)](https://github.com/ncamilotto/trustgame-paper)
 
 This repository contains the R scripts and supplementary materials for the working paper:
 
@@ -70,8 +70,8 @@ This project is fully reproducible. Follow these steps:
 
 First, clone this repository to your local machine:
 ```sh
-git clone https://github.com/ncamilotto/What-does-the-Trust-Game-say-about-Trust-.git
-cd What-does-the-Trust-Game-say-about-Trust-
+git clone https://github.com/ncamilotto/trustgame-paper.git
+cd trustgame-paper
 ```
 
 ### 2. Install Dependencies
