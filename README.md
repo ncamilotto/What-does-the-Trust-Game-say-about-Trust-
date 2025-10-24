@@ -14,13 +14,15 @@ The Trust Game, despite its well-established importance in experimental economic
 
 ## Repository Structure
 
+```text
 .
 ├── R/
-│ ├── 01_data_preprocessing.R # Script for cleaning and preparing citation data
-│ └── 02_alluvial_diagram.R # Script for network construction and visualization
+│   ├── 01_data_preprocessing.R   # Script for cleaning and preparing citation data
+│   └── 02_alluvial_diagram.R     # Script for network construction and visualization
 ├── data/
-│ └── database_WOS.RData # The dataset required to run the analysis
+│   └── database_WOS.RData         # The dataset required to run the analysis
 └── README.md
+```
 
 ## Methodology
 
