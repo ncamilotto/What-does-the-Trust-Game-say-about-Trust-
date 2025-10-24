@@ -2,6 +2,7 @@
 
 [![Language](https://img.shields.io/badge/Language-R-blue.svg)](https://www.r-project.org/)
 [![Repo](https://img.shields.io/badge/GitHub-Repo-green.svg)](https://github.com/ncamilotto/trustgame-paper)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/51913514118402293201518/trustgame-paper/blob/main/LICENSE)
 
 This repository contains the R scripts and supplementary materials for the working paper:
 
