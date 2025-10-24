@@ -4,4 +4,8 @@ other/
 archive/
 www/
 R/0_database_creation.R
-R/0_database_creation.R
+R/03_plot_cluster_qnorm_evolution.R
+R/04_plot_experiment_type_evolution_by_cluster.R
+R/05_prepare_shiny_data.R
+R/06_app.R
+~$*
