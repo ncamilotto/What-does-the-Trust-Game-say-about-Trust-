@@ -1,30 +1,21 @@
-#Data preprocessing
+# Data preprocessing
+#
+# The data is provided by Web of Science (WoS):
+# 
+# Query: "Trust Game" (Topic) OR "Investment Game" (Topic)
+# Refined by Publication Years: 1995–2024
+#
+# In accordance with Web of Science data sharing policies, 
+# only the columns necessary for the analysis are included in this project. 
+# The full dataset is not publicly shared.
 
-#The data is provided by WebofScience :
-
-#Query : "Trust Game" (Topic) or "Investment Game" (Topic)
-#Refined by Publication Years: 1995-2024
-
-library(bibliometrix)
 library(stringr)
 library(tibble)
-library(readxl)
 library(dplyr)
 library(tidyr)
-library(biblionetwork)
-library("writexl")
-library("readxl")
-library(networkflow)
-library(magrittr)
-library(dplyr)
-library(tidygraph)
 library(purrr)
-library(ggplot2)
-library(ggalluvial)
-library(ggrepel)
-library(forcats)
 
-# Liste des types de documents à conserver
+
 document_types <- c("ARTICLE", 
                     "ARTICLE; PROCEEDINGS PAPER", 
                     "ARTICLE; EARLY ACCESS", 

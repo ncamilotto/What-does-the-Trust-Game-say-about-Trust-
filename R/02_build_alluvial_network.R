@@ -1,5 +1,13 @@
-#[step 2A-1] alluvial creation
-#de base c'est 1
+library(dplyr)
+library(tidyr)
+library(stringr)
+library(biblionetwork)
+library(networkflow)
+library(forcats)
+library(ggplot2)
+library(ggalluvial)
+
+
 Edges <- biblio_coupling(Edges, "Noeud", "ID_citation", weight_threshold = 1) #Use of the biblio_coupling function to obtain the edges file
 Edges <- Edges %>%
 				subset(select = c('Source','Target','weight')) 
@@ -68,7 +76,7 @@ source_id = "ID_Art",
 target_id = "ItemID_Ref",
 time_variable = "Year",
 cooccurrence_method = "coupling_similarity",
-time_window = 10, #This is the parameter to be modified to obtain the alluvial with a time window of 5 years
+time_window = 10,
 edges_threshold = 3,
 overlapping_window = TRUE,
 filter_components = TRUE)
@@ -170,7 +178,7 @@ label_config <- list(
   "Social Correlates of Trust" = c("2010-2019"),
   "Social Preferences and Trust" = c("2009-2018"),
   "Structural Foundations of Trust" = c("2007-2016"),
-  "Socio-demographic Determinants" = c("2004-2013", "2011-2020"), # Exemple avec plusieurs fenêtres
+  "Socio-demographic Determinants" = c("2004-2013", "2011-2020"),
   "Measurement and Validity" = c("2004-2013"),
   "Social Psychology of Trust" = c("2009-2018"),
   "Online Social Psychology of Trust" = c("2013-2022"),
@@ -254,14 +262,13 @@ ggplot(alluv_dt, aes(x = window, y= y_alluv, stratum = intertemporal_name, alluv
   geom_label(
     stat = "stratum", 
     aes(label = cluster_label), 
-    size = 2.5,          # Taille du texte
-    color = "white",       # Couleur du texte (le "fond" du texte)
-    colour = "black",      # Couleur de la bordure du cadre (le "contour")
-    label.size = 0.5,      # Épaisseur de la bordure du cadre
-    fontface = "bold"      # Mettre le texte en gras pour une meilleure lisibilité
+    size = 2.5,
+    color = "white",
+    colour = "black",
+    label.size = 0.5,
+    fontface = "bold"
   ) +
   
-  # C'est ici que vous ajoutez votre palette de couleurs personnalisée
   scale_fill_manual(values = my_colors) +
   
   theme_minimal() +
