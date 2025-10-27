@@ -19,7 +19,7 @@ The Trust Game, despite its well-established importance in experimental economic
 .
 ├── R/
 │   ├── 01_data_preprocessing.R   # Script for cleaning and preparing citation data
-│   └── 02_alluvial_diagram.R     # Script for network construction and visualization
+│   └── 02_build_alluvial_network.R     # Script for network construction and visualization
 ├── data/
 │   └── database_WOS.RData         # The dataset required to run the analysis
 └── README.md
@@ -44,7 +44,7 @@ This script handles the crucial first step of cleaning and structuring the raw b
 -   **Unique ID Assignment**: Unique IDs are assigned to references starting with the most reliable identifier (DOI) and progressively using the composite keys to match remaining references. This ensures that different string representations of the same cited work are grouped together.
 -   **Output**: The script produces a clean edge list (`Edges_before_coupling`) where each row connects a source paper (`Noeud`) to a uniquely identified cited reference (`ID_citation`).
 
-### 2. Network Analysis and Visualization (`02_alluvial_diagram.R`)
+### 2. Network Analysis and Visualization (`02_build_alluvial_network.R`)
 
 This script takes the clean edge list and generates the dynamic network analysis visualized in Figure 4 of the paper.
 
@@ -94,7 +94,7 @@ Execute the R scripts sequentially. The first script prepares the data, and the 
 ```R
 # In your R console:
 source("R/01_data_preprocessing.R")
-source("R/02_alluvial_diagram.R")
+source("R/02_build_alluvial_network.R")
 ```
 
 After running the second script, the alluvial diagram from the paper will be generated.
