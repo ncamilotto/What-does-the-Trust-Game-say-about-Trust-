@@ -1,4 +1,4 @@
-# The Trust Game: A Historical and Methodological Analysis on the Frontier of Experimental and Behavioral Economics
+# The Trust Game: A Historical and Methodological Analysis at the Frontier of Experimental and Behavioral Economics
 
 [![Language](https://img.shields.io/badge/Language-R-blue.svg)](https://www.r-project.org/)
 [![Repo](https://img.shields.io/badge/GitHub-Repo-green.svg)](https://github.com/ncamilotto/trustgame-paper)
@@ -6,7 +6,7 @@
 
 This repository contains the R scripts and supplementary materials for the working paper:
 
-**Title:** *The Trust Game: A Historical and Methodological Analysis on the Frontier of Experimental and Behavioral Economics*  
+**Title:** *The Trust Game: A Historical and Methodological Analysis at the Frontier of Experimental and Behavioral Economics*  
 **Author:** Nicolas Camilotto  
 
 ## Abstract
